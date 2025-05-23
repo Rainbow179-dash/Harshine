@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Quote Generator</title>
+    <title>Image Gallery with Filter</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Daily Quote Generator</h1>
-        <p id="quote"></p>
-        <button onclick="generateQuote()">New Quote</button>
+        <h1>Image Gallery with Filter</h1>
+        <div class="filter-buttons">
+            <button onclick="filterImages('all')">All</button>
+            <button onclick="filterImages('nature')">Nature</button>
+            <button onclick="filterImages('animals')">Animals</button>
+            <button onclick="filterImages('architecture')">Architecture</button>
+        </div>
+        <div class="gallery">
+            <div class="image nature"><img src="D:\C Program\C Files\images\nature1.jpg" alt="Nature"></div>
+            <div class="image animals"><img src="D:\C Program\C Files\images\animal1.jpg" alt="Animal"></div>
+            <div class="image architecture"><img src="D:\C Program\C Files\images\architecture1.jpg" alt="Architecture"></div>
+            <div class="image nature"><img src="D:\C Program\C Files\images\nature2.jpg" alt="Nature"></div>
+            <div class="image animals"><img src="D:\C Program\C Files\images\animal2.jpg" alt="Animal"></div>
+            <div class="image architecture"><img src="D:\C Program\C Files\images\architecture2.jpg" alt="Architecture"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
